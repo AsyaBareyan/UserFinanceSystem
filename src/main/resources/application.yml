@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userfinancesystem
+    username: postgres
+    password: user
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+  liquibase:
+    change-log: classpath:db/changelog/liquibase-changelog.yml
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+SECRET-KEY: f2b35778641bdc4d1fa039daa514e079fb556839c0b9fc28dca64c3c2861b05f

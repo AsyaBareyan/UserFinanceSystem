@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - include:
+      file: 001_create_user_table.xml
+      relativeToChangelogFile: true
+  - include:
+      file: 002_create_account_table.xml
+      relativeToChangelogFile: true
+  - include:
+      file: 003_create_email_data_table.xml
+      relativeToChangelogFile: true
+  - include:
+      file: 004_create_phone_data_table.xml
+      relativeToChangelogFile: true
+  - include:
+      file: 005_insert_initial_users.xml
+      relativeToChangelogFile: true
+  - include:
+      file: 006_add_initial_balance_to_account_table.xml
+      relativeToChangelogFile: true
