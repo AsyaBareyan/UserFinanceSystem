@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert_users" author="AsyaBareyan">
+
+        <insert tableName="user">
+            <column name="name">Alice Johnson</column>
+            <column name="date_of_birth">1990-05-14</column>
+            <column name="password" >$2a$10$Li2wJU8k6NIanBCk6Fw6yOUYT6LsZ8Hysi1uaBqOQ86ZVqzH3mVMi</column>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="Bob Smith"/>
+            <column name="date_of_birth" valueDate="1985-10-23"/>
+            <column name="password" value="$2a$10$Li2wJU8k6NIanBCk6Fw6yOUYT6LsZ8Hysi1uaBqOQ86ZVqzH3mVMi"/>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="Charlie Davis"/>
+            <column name="date_of_birth" valueDate="1992-07-19"/>
+            <column name="password" value="$2a$10$Li2wJU8k6NIanBCk6Fw6yOUYT6LsZ8Hysi1uaBqOQ86ZVqzH3mVMi"/>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="Diana Moore"/>
+            <column name="date_of_birth" valueDate="1998-01-02"/>
+            <column name="password" value="$2a$10$Li2wJU8k6NIanBCk6Fw6yOUYT6LsZ8Hysi1uaBqOQ86ZVqzH3mVMi"/>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="Ethan Brown"/>
+            <column name="date_of_birth" valueDate="2000-12-31"/>
+            <column name="password" value="$2a$10$Li2wJU8k6NIanBCk6Fw6yOUYT6LsZ8Hysi1uaBqOQ86ZVqzH3mVMi"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
